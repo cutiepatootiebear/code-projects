@@ -4,7 +4,7 @@ document.form.addEventListener("submit", function (e) {
     var goomba = document.form.goomba.value
     var fiveG = 5 * goomba;
     var bob = document.form.bob.value
-    var sevB= 7 * bob
+    var sevB = 7 * bob
     var cheap = document.form.cheap.value
     var elevC = 11 * cheap
     document.getElementById("screen").innerHTML = `<span>${Number(fiveG) +

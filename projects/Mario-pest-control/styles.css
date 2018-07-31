@@ -1,18 +1,21 @@
 * {
+    /* hide for production */
     /* border: 1px solid black; */
     box-sizing: border-box;
 }
 
 html,
 body {
+    /* hide for production */
+    /* background-color: #ffeead; */
     background: #4d05e8;
     height: 100%;
-    /* background-color: #ffeead; */
     margin: 10px;
     color: #fff;
 }
 
 .container {
+    /* hide for production */
     /* border: 5px solid #ffcc5c; */
     box-sizing: border-box;
     display: flex;
@@ -21,9 +24,10 @@ body {
 }
 
 .main-section {
+    /* hide for production */
+    /* background-color: #96ceb4; */
     display: flex;
     justify-content: flex-end;
-    /* background-color: #96ceb4; */
     flex: .5;
 }
 
@@ -41,8 +45,9 @@ body {
 }
 
 header {
-    /* align-self: flex-end; */
+    /* hide for production */
     /* background-color: #96ceb4; */
+    /* align-self: flex-end; */
     /* flex: .4; */
     font-size: 2.4375rem;
 }
@@ -55,11 +60,12 @@ header {
 /* bc my main section has as dispaly flex, this section should have it also */
 
 .mid-section {
+    /* hide for production */
+    /* background-color: #10f188; */
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    /* background-color: #10f188; */
     flex: 1;
 }
 
@@ -72,11 +78,12 @@ header {
 }
 
 .last-section {
+    /* hide for production */
+    /* background-color: #a0154f; */
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    /* background-color: #a0154f; */
     /* flex: .1; */
 }
 

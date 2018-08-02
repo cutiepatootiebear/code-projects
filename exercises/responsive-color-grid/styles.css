@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+    border: 1px dotted;
+}
+
+/* .wrapper {
+    
+} */
+.one {
+    background-color: #F5C6D6;
+    height: 100px;
+    width: 100%;
+    display: inline-block
+}
+@media (min-width: 768px){
+    .one {
+        height: 20px;
+    }
+}
+/* .two {
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100%;
+    display: inline-block
+} */

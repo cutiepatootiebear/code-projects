@@ -101,6 +101,9 @@ form {
 }
 
 .button {
+    position: absolute;
+    bottom: -113px;
+    left: 39%;
     display: flex;
     align-items: stretch;
     align-self: center;
@@ -113,7 +116,9 @@ form {
 
 #wrapper {
     float: left;
-    width: 200px;
+    width: 83%;
+    position: relative;
+    left: -10px;
 }
 
 button {
@@ -148,6 +153,17 @@ button {
     font-weight: bold;
 }
 
+
+.footer {
+    position: relative;
+    right: 19px;
+    top: 116px;
+    width: 105%;
+    height: 76px;
+    background-color: #4d05e8;
+    color: white;
+    text-align: center;
+}
 /*Mobile Large 620px*/
 
 @media screen and (min-width: 38.75em) {

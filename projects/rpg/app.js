@@ -38,7 +38,7 @@ var player = {
     damage: 10,
     enemiesKilled: 0,
     valor: 100,
-    fireShield: false,
+    armor: false,
     terrorist: false
 }
 
@@ -136,7 +136,7 @@ var k = 0
 //     var userDesertValor = Math.floor((Math.random() * 16) + 5);
 
 
-       
+
 
 
 //     function attack() {
@@ -183,17 +183,17 @@ console.log("\nNice to meet you " + name + "! \nUnfortunately I cannot talk much
 
 var ciaChoices = ["Thank the CIA agent for her help", "Yell at the Agent for not helping with more information"]
 
-ciaChoices = rs.keyInSelect(ciaChoices, "Make a decision") 
-    if (ciaChoices === 1) {
-        help = false
-    } else if (ciaChoices === 0) {
-        help = true
-    } else {
-        quiet = true
-    }
+ciaChoices = rs.keyInSelect(ciaChoices, "Make a decision")
+if (ciaChoices === 1) {
+    help = false
+} else if (ciaChoices === 0) {
+    help = true
+} else {
+    quiet = true
+}
 ciaResponse()
 
-function ciaResponse(){
+function ciaResponse() {
     if (help === false) {
         console.log("\n'YOUR LOSS SHITBAG! YOU CAN FORGET ABOUT GETTING ANYMORE OF MY HELP OR GETTING ANY OF MY SUPPLIES!' \nThe CIA Agent then kicks you out of the training facility and you are left alone outside.\n");
         rs.keyInPause();
@@ -235,11 +235,11 @@ function trainingFacility() {
         } else {
             movement()
         }
-    } 
+    }
 }
 
 
-function shop(){
+function shop() {
     var items = ["Armor", "Weapons", "Guns", "Heal[Max HP]: 5 Valor"]
     items = rs.keyInSelect(items, "What would you like to buy?")
     if (items === 0) {
@@ -264,7 +264,7 @@ function shop(){
 }
 
 
-function armorShop(){
+function armorShop() {
     var armorPieces = ["Chestplate(50 Health): 40 valor", "Helmet(20 Health): 20 valor", "Gloves(30 Health): 30 valor", "Boots(15 Health): 20 valor"]
     armorPieces = rs.keyInSelect(armorPieces, "What armor would you like to buy?")
     if (armorPieces === 0) {
@@ -284,7 +284,7 @@ function armorShop(){
     }
 }
 
-function weaponShop(){
+function weaponShop() {
     var weaponPieces = ["Sword(50 Damage): 60 valor", "Battle-Axe(40 Health): 35 valor", "Pistol(35 Health): 25 valor"]
     weaponPieces = rs.keyInSelect(weaponPieces, "What weapon would you like to buy?")
     if (weaponPieces === 0) {
@@ -301,7 +301,7 @@ function weaponShop(){
     }
 }
 
-function gunShop(){
+function gunShop() {
     var gunPieces = ["Rifle(20 Health): 30 valor", "ammo(50 Health): 55 valor"]
     gunPieces = rs.keyInSelect(gunPieces, "What gun would you like to buy?")
     if (gunPieces === 0) {
@@ -333,7 +333,7 @@ function healthShop() {
     }
 }
 
-function buy(){
+function buy() {
     if (storeItems[x][k].equipped === true) {
         console.log("\nYou already purchased a " + storeItems[x][k].name + "!\n");
         rs.keyInPause();
@@ -341,7 +341,7 @@ function buy(){
             armorShop();
         } else if (x === 1) {
             weaponShop();
-        } else if (x === 2){
+        } else if (x === 2) {
             gunShop();
         } else {}
     } else if (player.valor < storeItems[x][k].price) {
@@ -354,7 +354,7 @@ function buy(){
         } else if (x === 2) {
             gunShop();
         } else {}
-    } else if (x === 0){
+    } else if (x === 0) {
         player.hpMax += storeItems[x][k].value;
         player.hp += storeItems[x][k].value;
         player.valor -= storeItems[x][k].price;
@@ -362,7 +362,7 @@ function buy(){
         console.log("\nYou have bought a " + storeItems[x][k].name + "! You now have " + player.valor + " valor!\n");
         rs.keyInPause();
         armorShop();
-    } else if (x === 1){
+    } else if (x === 1) {
         if (player.damage <= storeItems[x][k].price) {
             player.damage = storeItems[x][k].value;
             player.valor -= storeItems[x][k].price;
@@ -370,13 +370,12 @@ function buy(){
             console.log("\nYou have bought a " + storeItems[x][k].name + "! You now have " + player.valor + " valor!\n");
             rs.keyInPause();
             weaponShop();
-            }
-            else {
+        } else {
             console.log("\nYour current equipped weapon is stronger than the " + storeItems[x][k].name + "!\n");
             rs.keyInPause();
             weaponShop();
         }
-    } else if (x === 2){
+    } else if (x === 2) {
         if (ammo === false) {
             if (k === 0) {
                 player.hpMax += storeItems[x][k].value;
@@ -629,7 +628,7 @@ function trainingFacility() {
     if (help === false) {
         console.log("\nYou approach the armory, but are greeted by the angry CIA agent. \n'GET OUT OF HERE! YOU AREN'T GOING TO GET MY HELP OR SUPPLIES!\n");
         rs.keyInPause();
-        rs.movement();
+        movement();
     } else {
         var trainingFacilityChoices = ["Purchase supplies from the CIA agent", "Leave the training Facility"];
         console.log("\nYou approach the armory, greeted kindly by the CIA agent\n");

@@ -2,69 +2,184 @@
     border: 1px solid black;
     max-width: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 html,
 body {
-    background-color: #ffeead;
+    /* background-color: #ffeead; */
     max-width: 100%;
     overflow-x: hidden;
-    /* position: relative; */
+    margin:0; /* reset margin  */
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 600px 200px 100px;
-    position: absolute; 
-    width: 100%; 
+    /* display: grid; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 600px 200px; */
+    width: 100%;
     /* overflow-x: hidden */
 }
 
 @media only screen and (min-width: 1130px) {
     .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 5px 200px 600px 200px 100px;
-        overflow-x: hidden
+        /* display: grid; */
+        /* grid-template-columns: 2fr 1fr;
+        grid-template-rows: 5px 200px 600px 200px 100px; */
+        
     }
+
     header {
-        grid-column: 1 / -1;
         background-image: url("./assets/contours@2x.png"), url("./assets/noise.png"), url("./assets/gridlines.png"), url("./assets/huntington.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         display: flex;
-    }
-    .left-content {
-        grid-column: 1 / 2;
-    }
-    .right-content {
-        grid-column: 2 / 3;
-    }
-    footer {
-        grid-column: 1 / -1;
     }
 }
 
 header {
     background-image: url("./assets/contours@2x.png"), url("./assets/noise.png"), url("./assets/gridlines.png"), url("./assets/huntington.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    height: 250px;
     display: flex;
+    flex-direction: column;
+    /* y axis only if flex is positioned to column */
+    /* justify-content: center; */
+    /* cross axis */
+    align-items: center;
 }
 
-.link {
-    display: grid;
-    /* grid-template-columns: auto; */
-    grid-template-rows: auto;
-    /* grid-column: 1 / span 2; */
-    justify-items: center;
+@media only screen and (min-width: 1130px) {
+    header {
+        flex-direction: row;
+    }
 }
 
-.left-content {
-    /* grid-column: 2 / -1; */
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 70%;
 }
+
+@media only screen and (min-width: 500px) {
+    .header-main{
+        flex-direction: row;
+    }
+}
+
+
+.header-main-icon {
+    height: 45px;
+    width: 45px;
+}
+
+.header-main-title {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgba(255,255,255,255);
+    font-weight: normal;
+    font-size: 31px;
+}
+
+.header-main-subtitle {
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    font-size: 20px;
+}
+
+
+.header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    background-color: rgba(255,255,255,0.2);
+    flex-basis: 30%;
+    /* align-self: flex-end; */
+    /* margin-top: auto; */
+}
+
+.header-link-text {
+    color: rgba(255,255,255,0.6);
+    margin: 0;
+    font-weight: normal;
+    line-height: 70px;
+    margin: 0 119px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1130px) {
+    .header-link {
+        width: initial;
+    }
+}
+
+.header-link span {
+    font-family: 'verdemoderna';
+    color: rgba(255,255,255,0.6);
+    font-size: 30px;
+
+}
+
+
+
+
+.article-one {
+    padding: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: #325050;
+    line-height: 1.6;
+    font-size: small;
+}
+
+.article-two {
+    font-size: small;
+    padding: 30px;
+    line-height: 1.6;
+    color: #325050;
+    font-family: 'Libre Baskerville', serif;
+    background-image: url("./assets/contours-opaque.png"), url("./assets/gridlines-opaque.png"), url("./assets/gridlines.png"), url("./assets/bamboo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(138,188,159,0.5);
+}
+
+.paragraph-one h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.paragraph-two h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.paragraph-three h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
 
 footer {
     /* grid-column: 1 / -1; */
+}
+
+
+
+
+
+
+/* font style */
+@font-face {
+    font-family: 'verdemoderna';
+    src: url('verdemoderna.woff');
+    font-weight: normal;
+    font-style: normal;
 }

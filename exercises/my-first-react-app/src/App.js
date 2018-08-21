@@ -8,7 +8,7 @@ const App = () => {
         <div>
             
         <p> testing </p>
-        <HelloWorld/>
+        <HelloWorld />
         <h4> hello </h4>
         
         </div>

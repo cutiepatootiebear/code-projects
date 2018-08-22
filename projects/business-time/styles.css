@@ -82,6 +82,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 /* wrapper class */
 @media screen and (min-width: 1100px) {
     .wrapper {

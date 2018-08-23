@@ -1,6 +1,5 @@
 import React from 'react';
 import Friend from './Friend';
-import Pet from './Pet';
 
 const App = () => {
     const friends = [{
@@ -52,11 +51,12 @@ const App = () => {
     }]
 
 
-const displayFriends = friends.map((friend, i) => {
-    return <Friend key={friend.name + i}
-                    name={friend.name}
-                    age={friend.age}
-                    pets={friend.pets} />
+const displayFriends = friends.map((friendz, i) => {
+    console.log('this is friendz, i', friendz, i)
+    return <Friend key={friendz.name + i}
+                    name={friendz.name}
+                    age={friendz.age}
+                    pets={friendz.pets} />
 })
 
 return (

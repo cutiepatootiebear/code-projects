@@ -1,0 +1,53 @@
+* {
+    /* border: 1px solid black; */
+}
+.container {
+    
+    width: 100%;
+}
+
+
+.blog-container {
+    border-bottom: 1px solid black;
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.blog-container > h3{
+    font-weight: 300;
+
+}
+
+.header-container {
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg');
+    background-size: cover;
+    height: 477px;
+    opacity: 0.5;
+    background-color: #212529;
+    }
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+.right-nav ul li{
+    display: inline-block;
+    padding-right: 16%;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Open Sans','Helvetica Neue';
+    color: white;
+    padding-left: 138px;
+}

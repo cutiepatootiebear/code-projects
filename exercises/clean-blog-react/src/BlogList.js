@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PropTypes from 'prop-types';
 
 const Blog = (props) => {
 console.log("this is props=>", props)
@@ -13,4 +14,14 @@ console.log("this is props=>", props)
     )
 }
 
+Blog.prototype = {
+    title: PropTypes.string.isRequired,
+};
+
 export default Blog;
+
+
+
+
+
+

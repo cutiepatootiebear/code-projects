@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.images {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.donNavImage {
+    height: 60px;
+    width: 60px;
+}
+
+.navText {
+    display: flex;
+    color: #a21e1b;
+    padding-left: 89px;
+    justify-content: start;
+    position: absolute;
+    top: 14px;
+}
+
+.textStyle {
+    height: 23px;
+    position: relative;
+    background-color: blue;
+    opacity: 0.7;
+    bottom: 43px;
+    width: 102px;
+}

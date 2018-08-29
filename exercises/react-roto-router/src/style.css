@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100vw;
+    height: 40px;
+    background-color: darkolivegreen;
+    color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.home,
+.contact,
+.about,
+.services {
+    height: 480px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.home {
+    background-color: coral
+}
+
+.contact {
+    background-color: teal;
+}
+
+.about {
+    background-color: darkturquoise;
+}
+
+.services {
+    background-color: darkred;
+}
+
+.footer {
+    background-color: deeppink;
+}

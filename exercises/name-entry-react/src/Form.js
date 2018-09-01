@@ -22,16 +22,18 @@ class Form extends Component {
     // alt way
     // call the prevState, that allows access a copy of the previous state by callback()
 
-    handleSubmit = event => {
-        event.preventDefault();
-        // set state always requires a return 
-        this.setState(prevState => {
+
             // this.state.names.push(this.state.myName);
             // a better way to push
             // const pushingOneItem = [...prevState.names, prevState.myName] // put myName into names arry
             // console.log('this is this.state.myName', this.state.myName)
             // console.log('pushingOneItem=>', pushingOneItem)
             // set state always requires a return 
+    handleSubmit = event => {
+        event.preventDefault();
+        // set state always requires a return 
+        this.setState(prevState => {
+ 
             return {
                 // the value we want to return should be in an object 
                 names: [...prevState.names, prevState.myName]

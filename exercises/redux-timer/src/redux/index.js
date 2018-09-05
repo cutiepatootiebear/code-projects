@@ -17,8 +17,6 @@ export const milliSec = () => {
 }
 
 // reducer
-
-
 const reducer = (prevState = initState, action) => {
     switch(action.type) {
         case "MILLI_SEC":

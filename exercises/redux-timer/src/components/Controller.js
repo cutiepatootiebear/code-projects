@@ -20,16 +20,23 @@ const Controller = props => {
     }
 
     // reset func
-    // const reset = () => {
-
-    // }
+    const reset = props => {
+        console.log('reset gets hit')
+        return {
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+            milliseconds: 0
+        }
+       
+    }
 
 
     return(
         <div>
             <button className="startButton" onClick={setTimeFunc}>Start</button>
             <button onClick={stop}>Stop </button>
-            <button onClick={props.reset}>reset </button>
+            <button onClick={reset}>reset </button>
         </div>
     )
 }

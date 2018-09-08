@@ -1,0 +1,11 @@
+body {
+    background: #263238
+}
+
+.cardContainer {
+    border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 300px;
+    width: 300px;
+}

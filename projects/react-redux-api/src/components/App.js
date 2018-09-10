@@ -1,41 +1,29 @@
 import React, { Component } from "react";
-import { getTrivia } from "../reducers";
-import { connect } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Home from "./QuestionsList";
-import QuestionView from "./QuestionView";
-import AnswerView from "./AnswerView";
-import QuestionList from './QuestionsList'
+import QuestionsList from "./QuestionsList";
+import LargeQuestionView from "./LargeQuestionView";
+import LargeAnswerView from "./LargeAnswerView"
 
 class App extends Component {
-  componentDidMount() {
-    this.props.getTrivia();
-  }
+
   render() {
     return (
       // routes
-      <div className="App">
-        {/* <Switch>
+        <Switch>
           <Route exact path="/" component={QuestionsList} />
-          <Route exact path="/:questionId" component={QuestionView} />
-          <Route exact path="/:questionId/answer" component={AnswerView} />
-        </Switch> */}
-
-        <h3>app loads and prints data to screen</h3>
-        <QuestionList />
-        {/* {this.props.trivia.map(trivia => {
-      return <h3 key={trivia.id}> {trivia.question}</h3>;
-    })} */}
-      </div>
+          <Route exact path="/:questionId" component={LargeQuestionView} />
+          <Route exact path="/:questionId/answer" component={LargeAnswerView} />
+        </Switch> 
     );
   }
 }
 
-export default connect(
-  state => state,
-  { getTrivia }
-)(App);
+export default App
+// export default connect(
+//   state => state,
+//   { getTrivia }
+// )(App);
 
 /**
  * @class App

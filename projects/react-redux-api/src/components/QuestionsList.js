@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import AnswerView from "./AnswerView";
 import QuestionView from "./QuestionView";
 import { connect } from "react-redux";
 import { getTrivia } from "../reducers";
@@ -7,7 +6,6 @@ import { getTrivia } from "../reducers";
 class QuestionList extends Component {
   constructor() {
     super();
-
     this.state = {
       ask: false
     };
@@ -44,6 +42,8 @@ class QuestionList extends Component {
           return (
             <QuestionView
               key={trivia.id}
+              history={this.props.history} 
+              questionId={trivia.id}
               question={trivia.question}
               difficulty={trivia.difficulty}
               ask={this.state.ask}

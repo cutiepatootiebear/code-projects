@@ -1,4 +1,3 @@
-
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import axios from "axios";
@@ -9,18 +8,22 @@ const initialState = {
 };
 
 // Action creator to get the trivia
-
 export const getTrivia = () => {
   return dispatch => {
     axios.get(url).then(response => {
-      return dispatch({ // displatch an action
+      let newResults= response.data.results.map(( q, i ) => {
+        q.id=i
+        return  q
+      })
+      console.log('newResults ', newResults)
+      return dispatch({
+        // displatch an action
         type: "GET_TRIVIA", //which represents an instruction to follow so that the store gets updated correctly
-        triviaData: response.data.results
+        triviaData: newResults
       });
     });
   };
 };
-
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -33,8 +36,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-
-
 const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;
@@ -44,17 +45,12 @@ export default store;
  * with the new data from the action that the dispatcher gave it.
  * It's conceptually equivalent to React's setState method.
  *
- *
  * The reducer function takes 2 parameters: the current version of
  * state and the action object that the dispatcher gave it
  *
- *
  * The reducer should look at the action object and determine
  * what to do based on the action's type property. Handled by the below switch
- */
-
-
- /**
+ *
  * calling another function and takes dispatch serves the reducer an action is going to be created
  * The dispatcher sends actions to the reducer.
  * middleware handle dispatching actions asyncronously

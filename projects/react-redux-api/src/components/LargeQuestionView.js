@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import ProtoTypes from "prop-types";
+import './styles/questions.css';
+import decode from 'unescape'
 
 class LargeQuestionView extends Component {
   constructor(props) {
@@ -37,20 +39,18 @@ class LargeQuestionView extends Component {
     const answers = incorrect_answers.map(ans => {
       return (
         <li onClick={() => this.showAnswer(id)} className="questionLi">
-          <div className="circle"> </div>
-          {ans}
+          {decode(ans)}
         </li>
       );
     });
 
     return (
       <div className="questionView">
-        <div>{question}</div>
+        <div style={{ fontSize: '38px', width: '60%', textAlign: 'center' }}>{decode(question)}</div>
         <ul className="questionUl">
           {answers}
           <li onClick={() => this.showAnswer(id)} className="questionLi">
-          <div className="circle"> </div>
-          {correct_answer} </li>
+          {decode(correct_answer)} </li>
         </ul>
         {/* <div>{correct_answer}</div> */}
       </div>

@@ -8,14 +8,18 @@ body {
 
 .cardContainer {
     border: 1px solid black;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 300px;
-    width: 300px;
-    background-color: #1e8bc3;
-}
+    /* display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    height: 180px;
+    width: 20%;
+    background-color: #61DAFB;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid white;
 
-.showQuestion {
+} */
+
+/* .showQuestion {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: 1px solid white;
@@ -26,12 +30,12 @@ body {
     width: 300px;
 }
 
-.questionView {
+/* .questionView {
     background-color: #1e8bc3;
     height: 100vh;
     text-align: center;
     
-}
+} */
 
 .questionUl {
     text-align: left;

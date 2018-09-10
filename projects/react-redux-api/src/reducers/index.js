@@ -11,8 +11,10 @@ const initialState = {
 export const getTrivia = () => {
   return dispatch => {
     axios.get(url).then(response => {
+      console.log(response);
       let newResults= response.data.results.map(( q, i ) => {
         q.id=i
+        // q.viewed=false
         return  q
       })
       console.log('newResults ', newResults)

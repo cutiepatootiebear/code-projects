@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import QuestionView from "./QuestionView";
 import { connect } from "react-redux";
 import { getTrivia } from "../reducers";
+import "./styles/questions.css";
 
 class QuestionList extends Component {
   constructor() {
@@ -12,7 +13,9 @@ class QuestionList extends Component {
   }
 
   componentDidMount() {
-    this.props.getTrivia();
+    if(!this.props.trivia.length > 0) {
+      this.props.getTrivia();
+    }
   }
 
   toggleAsk = () => {
@@ -37,12 +40,13 @@ class QuestionList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="questions-grid">
+        <TextGrid />
         {this.props.trivia.map(trivia => {
           return (
             <QuestionView
               key={trivia.id}
-              history={this.props.history} 
+              history={this.props.history}
               questionId={trivia.id}
               question={trivia.question}
               difficulty={trivia.difficulty}
@@ -55,6 +59,15 @@ class QuestionList extends Component {
     );
   }
 }
+
+const TextGrid = () => (
+  <div className="text-grid">
+    <p style={{ position: "relative", left: "-40px" }}> Computer Science 100 </p>
+    <p> Computer Science 200 </p>
+    <p> Computer Science 300 </p>
+    <p style={{ position: "relative", right: "-40px" }}> Computer Science 400 </p>
+  </div>
+);
 
 export default connect(
   state => state,

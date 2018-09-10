@@ -1,8 +1,13 @@
+/**
+ * Path Params 
+ * Sometimes there are variables within a pathname that we want to capture. 
+ */
+
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import ProtoTypes from "prop-types";
-import './styles/questions.css';
-import decode from 'unescape'
+import "./styles/questions.css";
+import decode from "unescape"; //decodes $ % and "" to dispaly properly
 
 class LargeQuestionView extends Component {
   constructor(props) {
@@ -46,11 +51,21 @@ class LargeQuestionView extends Component {
 
     return (
       <div className="questionView">
-        <div style={{ fontSize: '38px', width: '60%', textAlign: 'center' }}>{decode(question)}</div>
+        <div
+          style={{
+            fontSize: "38px",
+            width: "60%",
+            textAlign: "center",
+            paddingBottom: "35px"
+          }}
+        >
+          {decode(question)}
+        </div>
         <ul className="questionUl">
           {answers}
           <li onClick={() => this.showAnswer(id)} className="questionLi">
-          {decode(correct_answer)} </li>
+            {decode(correct_answer)}{" "}
+          </li>
         </ul>
         {/* <div>{correct_answer}</div> */}
       </div>

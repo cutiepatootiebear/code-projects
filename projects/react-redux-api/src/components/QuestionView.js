@@ -9,9 +9,9 @@ class QuestionView extends Component {
     };
   }
   changeAsk = e => {
-      this.setState({
-          ask: true
-      }) 
+    this.setState({
+      ask: true
+    });
     this.props.history.push(`/${this.props.questionId}`);
   };
   render() {
@@ -35,3 +35,11 @@ class QuestionView extends Component {
 export default QuestionView;
 
 // this.props.trivia.viewed ? <span>symbol</span>
+/**
+ * Each router creates a history object, which it uses to keep track of the current location[1]
+ * and re-render the website whenever that changes. The other components provided by React Router
+ * rely on having that history object available through React’s context, so they must be rendered as 
+ * descendants of a router component.
+ * 
+ * A React Router component that does not have a router as one of its ancestors will fail to work.
+ * */

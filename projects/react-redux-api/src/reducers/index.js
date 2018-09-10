@@ -12,12 +12,12 @@ export const getTrivia = () => {
   return dispatch => {
     axios.get(url).then(response => {
       console.log(response);
-      let newResults= response.data.results.map(( q, i ) => {
-        q.id=i
+      let newResults = response.data.results.map((q, i) => {
+        q.id = i;
         // q.viewed=false
-        return  q
-      })
-      console.log('newResults ', newResults)
+        return q;
+      });
+      console.log("newResults ", newResults);
       return dispatch({
         // displatch an action
         type: "GET_TRIVIA", //which represents an instruction to follow so that the store gets updated correctly

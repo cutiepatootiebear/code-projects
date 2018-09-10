@@ -13,7 +13,7 @@ class QuestionList extends Component {
   }
 
   componentDidMount() {
-    if(!this.props.trivia.length > 0) {
+    if (!this.props.trivia.length > 0) {
       this.props.getTrivia();
     }
   }
@@ -24,18 +24,6 @@ class QuestionList extends Component {
         ask: !prevState.ask
       };
     });
-  };
-
-  pointsRate = difficulty => {
-    if (difficulty === "easy") {
-      return 100;
-    } else if (difficulty === "medium") {
-      return 200;
-    } else if (difficulty === "hard") {
-      return 300;
-    } else {
-      return 400;
-    }
   };
 
   render() {
@@ -62,10 +50,16 @@ class QuestionList extends Component {
 
 const TextGrid = () => (
   <div className="text-grid">
-    <p style={{ position: "relative", left: "-40px" }}> Computer Science 100 </p>
+    <p style={{ position: "relative", left: "-40px" }}>
+      {" "}
+      Computer Science 100{" "}
+    </p>
     <p> Computer Science 200 </p>
     <p> Computer Science 300 </p>
-    <p style={{ position: "relative", right: "-40px" }}> Computer Science 400 </p>
+    <p style={{ position: "relative", right: "-40px" }}>
+      {" "}
+      Computer Science 400{" "}
+    </p>
   </div>
 );
 

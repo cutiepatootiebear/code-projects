@@ -1,25 +1,23 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import QuestionsList from "./QuestionsList";
 import LargeQuestionView from "./LargeQuestionView";
-import LargeAnswerView from "./LargeAnswerView"
+import LargeAnswerView from "./LargeAnswerView";
 
 class App extends Component {
-
   render() {
     return (
       // routes
-        <Switch>
-          <Route exact path="/" component={QuestionsList} />
-          <Route exact path="/:questionId" component={LargeQuestionView} />
-          <Route exact path="/:questionId/answer" component={LargeAnswerView} />
-        </Switch> 
+      <Switch>
+        <Route exact path="/" component={QuestionsList} />
+        <Route exact path="/:questionId" component={LargeQuestionView} />
+        <Route exact path="/:questionId/answer" component={LargeAnswerView} />
+      </Switch>
     );
   }
 }
 
-export default App
+export default App;
 // export default connect(
 //   state => state,
 //   { getTrivia }

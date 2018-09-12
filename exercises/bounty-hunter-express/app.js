@@ -24,6 +24,7 @@ const bounties = [
     id: "2345"
   }
 ];
+console.table(bounties)
 
 app.use(bodyParser.json());
 
@@ -43,13 +44,13 @@ app.use(bodyParser.json());
 // })
 
 //POST endpoint that adds a new bounty object to the array of bounties.
-// app.post("/bounties/", (req, res) => {
-//   console.log("req.body", req.body);
-//   const newObj = req.body;
-//   newObj.id = uuid();
-//   bounties.push(newObj);
-//   res.send(newObj);
-// });
+app.post("/bounties/", (req, res) => {
+  console.log("req.body", req.body);
+  const newObj = req.body;
+  newObj.id = uuid();
+  bounties.push(newObj);
+  res.send(newObj);
+});
 
 // Put
 // app.put("/bounties/:id", (req, res) => {
@@ -75,7 +76,7 @@ bountyRouter.route("/")
 bountyRouter
   .route("/:id")
   .get((req, res) => {
-      
+      ç
     res.send(`GET on /bounties/${req.params.id} endpoint`);
   })
   .put((req, res) => {
@@ -88,5 +89,5 @@ bountyRouter
   app.use("/bounties", bountyRouter)
 
 app.listen(3000, () => {
-  console.log("app is listening on port 3000!");
+  console.log("server app is listening on port 3000!");
 });

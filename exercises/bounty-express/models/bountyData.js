@@ -2,14 +2,13 @@ const mongoose = require("mongoose");
 
 const bountiesSchema = new mongoose.Schema({
   fName: String,
-  fName: String,
-  living: boolean,
+  lName: String,
+  living: Boolean,
   age: Number,
   bountyAmount: Number,
   type: String,
-  id: String
 });
 
-console.table(bounties);
+console.table(bountiesSchema);
 
 module.exports = mongoose.model("bounty", bountiesSchema);

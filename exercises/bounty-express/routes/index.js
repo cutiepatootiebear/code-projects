@@ -2,7 +2,6 @@ const express = require("express");
 const bounty = require("../controller/bounty");
 const router = express.Router();
 
-// Create POST
 router.post("/bounties", bounty.createBounty);
 router.get("/bounties", bounty.getAllBounties);
 router.get("/bounties/:id", bounty.getOneBounty);

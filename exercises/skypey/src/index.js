@@ -13,9 +13,13 @@ const render = () => {
 render();
 store.subscribe(render);
 registerServiceWorker();
-
 function fancyLog() {
   console.log("%c Rendered with 👉 👉👇", "background: purple; color: #fff");
   console.log("store. getState()=> ", store.getState()); // this will log the state retrieved from store
   console.log("store => ", store);
 }
+
+
+/**
+ * Entry point for Appn
+ */

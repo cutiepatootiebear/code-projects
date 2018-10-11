@@ -28,4 +28,8 @@ export default App;
 
 • Ideally, keep an array of IDs to indicate ordering.
 
+“App.js attempts to retrieve contacts from the store.”
+
+
+
  */

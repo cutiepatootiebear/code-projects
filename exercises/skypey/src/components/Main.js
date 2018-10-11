@@ -6,3 +6,9 @@ const Main = () => {
 };
 
 export default Main;
+
+/**
+ * 
+ * “Sidebar.js, Sidebar.css , Main.js and Main.css in the components folder. They do not talk to Redux directly for anything.”
+
+ */

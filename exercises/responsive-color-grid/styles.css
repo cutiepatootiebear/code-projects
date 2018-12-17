@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+    border: 1px dotted;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .pink {
+    background-color: #f5c6d6;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+  }
+  @media (max-width: 768px) {
+    .pink {
+      height: 20px;
+    }
+  }
+  
+  .red {
+    background-color: #ee2e84;
+    height: 100px;
+    width: 25%;
+    display: inline-block;
+    border: 5px solid white;
+  }
+  @media (max-width: 768px) {
+    .red {
+      height: 20px;
+      display: block;
+      width: 100%;
+      border: 1px solid white;
+    }
+  }
+  
+  .blue {
+    background-color: #85cfd8;
+    height: 100px;
+    width: 50%;
+    display: inline-block;
+    border: 5px solid white; 
+  }
+  
+  @media (max-width: 768px) {
+    .blue {
+      height: 20px;
+      display: block;
+      width: 100%;
+      border: 1px solid white;
+    }
+  }
+  
+  .green {
+    background-color: #8DC63F;
+    height: 100px;
+    width: 75%;
+    display: inline-block;
+    border: 5px solid white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .green {
+      height: 20px;
+      display: block;
+      width: 100%;
+      border: 1px solid white;
+    }
+  }
+  
+  .orange {
+    background-color: #E76E34;
+    height: 100px;
+    width: 25%;
+    display: inline-block;
+    border: 5px solid white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .orange {
+      height: 20px;
+      display: block;
+      width: 100%;
+      border: 1px solid white;
+    }
+  }

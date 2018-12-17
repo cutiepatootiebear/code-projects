@@ -1,0 +1,82 @@
+{
+    "appetizers": [{
+            "name": "fries",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best fries in town"
+        },
+        {
+            "name": "salad",
+            "ingredients": "lettuce, tomatoes, peppers",
+            "description": "best salad in town"
+        },
+        {
+            "name": "chips",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best chips in town"
+        }
+    ],
+    "cold sandwiches": [{
+            "name": "Famous turkey sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best turkey sandwhich in town"
+        },
+        {
+            "name": "Famous chicken sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best chicken sandwhich in town"
+        },
+        {
+            "name": "Famous roast beef sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best roast beef sandwhich in town"
+        }
+    ],
+    "hot sandwiches": [{
+            "name": "Famous hot turkey sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best turkey sandwhich in town"
+        },
+        {
+            "name": "Famous hot chicken sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best turkey sandwhich in town"
+        },
+        {
+            "name": "Famous hot veggie sandwhich",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best veggie sandwhich in town"
+        }
+    ],
+    "desserts": [{
+            "name": " ice cream",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best ice cream sandwhich in town"
+        },
+        {
+            "name": " cheese cake",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best cheese cake in town"
+        },
+        {
+            "name": " birthday cake",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best birthday cake in town"
+        }
+    ],
+    "drinks": [{
+            "name": " Coke",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best soda in town"
+        },
+        {
+            "name": " sprite",
+            "ingredients": ["potatoes", "salt", "pepper"],
+            "description": "best soda in town"
+        },
+        {
+            "name": " coffee",
+            "ingredients":["potatoes", "salt", "pepper"],
+            "description": "best coffee in town"
+        }
+    ]
+}

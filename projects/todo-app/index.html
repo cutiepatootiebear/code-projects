@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Shopping todo app</h1>
+        <form name="todoForm">
+            To purchse:
+            <br>
+            <input type="text" name="title" placeholder="Title">
+            <br> description:
+            <br>
+            <input type="text" name="description" placeholder="description">
+            <br>price:
+            <br>
+            <input type="number" name="price" placeholder="price">
+            <br>imgUrl:
+            <br>
+            <input type="text" name="imgUrl" placeholder="imgUrl">
+            <br>Submit:
+            <br>
+            <button id="submit">Submit</button>
+
+        </form>
+
+
+        <!-- display data here -->
+        <div id="screen">
+            <ul id="todos"></ul>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

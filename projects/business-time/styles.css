@@ -1,0 +1,311 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    /* background: red */
+}
+
+figure,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    padding: 1.5em 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'comfortaa';
+    font-size: 1.25em;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Roboto Slab';
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'comfortaa';
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1100px) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+#header {
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+    nav {
+        width: 50%;
+        margin: 0 0 0 4%;
+    }
+}
+
+.global-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* wrapper class */
+@media screen and (min-width: 1100px) {
+    .wrapper {
+        display: flex;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5em 0;
+    background-image: url('http://www.designbolts.com/wp-content/uploads/2012/12/Subtle-Dots-White-Tileable-pattern.jpg');
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        width: 80%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and(min-width: 700px) {
+    .content-3 {
+        order: 4;
+    }
+}
+
+.content-sections {
+    /* background: purple; */
+    width: 95%;
+    margin: 0 auto 2em;
+}
+
+.gallery-container {
+    /* background: pink; */
+    width: 95%;
+    margin: 0 auto 2em;
+}
+
+/* .gallery {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.gallery {
+    /* background: darkblue; */
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 550px) {
+    .gallery {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .gallery-item-1 {
+        order: 3;
+    }
+    .gallery-item-2 {
+        order: 6;
+    }
+    .gallery-item-3 {
+        order: 1;
+    }
+    .gallery-item-4 {
+        order: 4;
+    }
+    .gallery-item-5 {
+        order: 3;
+    }
+    .gallery-item-6 {
+        order: 2;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .gallery-item-1 {
+        order: 1;
+    }
+    .gallery-item-2 {
+        order: 2;
+    }
+    .gallery-item-3 {
+        order: 3;
+    }
+    .gallery-item-4 {
+        order: 4;
+    }
+    .gallery-item-5 {
+        order: 5;
+    }
+    .gallery-item-6 {
+        order: 6;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .gallery-item-1 {
+        order: 6;
+    }
+    .gallery-item-2 {
+        order: 5;
+    }
+    .gallery-item-3 {
+        order: 4;
+    }
+    .gallery-item-4 {
+        order: 3;
+    }
+    .gallery-item-5 {
+        order: 2;
+    }
+    .gallery-item-6 {
+        order: 1;
+    }
+}
+
+/* end gallery style */
+
+.gallery-items {
+    /* background: gold; */
+    position: relative;
+    width: 100%;
+    padding: .5em;
+}
+
+.gallery-items img {
+    width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+    .gallery-items {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .gallery-items {
+        width: 33.333%;
+    }
+}
+
+.gallery-order {
+    color: white;
+    font-family: 'Roboto Slab';
+    font-size: 5em;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    opacity: .75;
+}
+
+aside {
+    padding: 1em;
+    background-image: url('http://www.designbolts.com/wp-content/uploads/2013/02/Light-aluminum-Grey-Seamless-Pattern-For-Website-Background.jpg');
+}
+
+@media screen and(min-width: 1100px) {
+    aside {
+        padding: 3.5em 0;
+    }
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+.blog-container {
+    /* background: gold; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and(min-width: 1100px) {
+    .blog-container {
+        display: block;
+        padding: 0 .75em 0 .75em;
+    }
+}
+
+.blog-post {
+    width: 100%;
+    padding: .35em;
+    margin-bottom: 1em;
+}
+
+.blog-post img {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .blog-post {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .blog-post {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+}
+
+.blog-titles {
+    margin-bottom: .5em;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 4.5em;
+}

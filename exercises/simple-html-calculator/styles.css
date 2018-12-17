@@ -1,0 +1,46 @@
+.container {
+    top: 52px;
+    /* left: 343px; */
+    position: relative;
+    height: 420px;
+    width: 400px;
+    border-radius: 6%;
+    background-color: lightslategray;
+    border: 2px solid black;
+}
+
+#screen {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    left: 43px;
+    top: 50px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+#screen span {
+    position: relative;
+    top:20px;
+}
+
+.addFunction{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+}
+
+.subtractFunction{
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+
+.multiplyFunction {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}

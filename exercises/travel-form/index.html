@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="formBackground">
+
+        <div class="form">
+            <h1>Jams Airline</h1>
+            <form name="travelForm">
+                <!-- First name (text input) -->
+                First name:
+                <input id="first-name" type="text" name="fname" placeholder=" First Name">
+                <br>
+                <!-- Last name (text input) -->
+                Last name:
+                <input id="last-name" type="text" name="lname" placeholder=" Last Name">
+                <br>
+                <!-- Age (number input) -->
+                Age:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input id="age" type="number" name="age" placeholder=" Type your age foo" style="
+    margin-left: 5px;">
+                <br>
+                <!-- gender (radio buttons with 2 or more options) -->
+                Gender: &nbsp; Female
+                <input value="female" type="radio" name="gender" /> Male
+                <input value="male" type="radio" name="gender" />
+                <!-- location select box with at least 3 options.-->
+                <br> Location:&nbsp; Santa Monica
+                <input value="Santa Monica" name="place" type="checkbox" /> San Fransisco
+                <input value="Santa Fransisco" name="place" type="checkbox" /> Salt Lake City
+                <input value="Salt Lake City" name="place" type="checkbox" />
+                <br>
+                <!-- dietary restrictions -->
+                dietary restrictions: Lactose Free
+                <input value="Lactose Free" name="diet" type="checkbox" /> Vegetarian
+                <input value="Vegetarian" name="diet" type="checkbox" /> Kosher
+                <input value="Kosher" name="diet" type="checkbox" />
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

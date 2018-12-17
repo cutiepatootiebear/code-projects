@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+.container {
+    height: 500px;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+}
+
+.row1 {
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid white;;
+}
+
+.row2 {
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid white;;
+
+}

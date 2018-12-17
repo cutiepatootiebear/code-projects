@@ -1,0 +1,32 @@
+h1 {
+    color: darkgreen;
+}
+
+.container {
+    font-family: Georgia;
+    text-align: center;
+}
+
+.content {
+    margin: 40px;
+    line-height: 25px;
+}
+
+#image {
+    height: 250px;
+    width: 23%;
+    float: left;
+    margin-right: 15px;
+}
+
+.second-container {
+    margin: 40px;
+}
+
+div.a {
+    text-transform: uppercase;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
